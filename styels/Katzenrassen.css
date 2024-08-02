@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+
+
+
+
+
+/* rassen*/
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+main {
+    font-family: "IM Fell English SC", serif;
+}
+
+.description_card {
+    font-size: 20px;
+}
+
+/* rassen*/

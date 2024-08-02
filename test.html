@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${breed.name}</title>
+    <link rel="icon" href="bilder/cat_icon.png" type="imege/ x-icon">
+
+    <!--eigene scripts -->
+    <link rel="stylesheet" href="styels/styel.css" />
+    <link rel="stylesheet" href="styels/statick.css" />
+
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/api.js"></script>
+    <!--eigene scripts -->
+
+    <!-- Bibliotheken -->
+
+    <!--Boostrap-->
+    <link rel="stylesheet" href="Boostrap_min/css/bootstrap.min.css" />
+    <script src="Boostrap_min/js/bootstrap.bundle.min.js"></script>
+    <!--Boostrap-->
+
+
+
+    <!-- Bibliotheken -->
+
+
+
+
+
+</head>
+
+<body onload="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="width: 100%;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="nav-icon" src="bilder/cat_icon.png" alt="leptop"></a>
+            <span><i class="name" style="color: rgba(129, 107, 107, 0.856);"> Cat</i> <i class="name"
+                    style="color: rgb(189, 179, 179); ">World</i></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Angebote</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu an">
+                            <li><a class="dropdown-item" href="Katzenrassen.html">Katzenrassen </a></li>
+                            <li><a class="dropdown-item" href="#">Arbeits-Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Normale Laptops</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- <h1>Abyssinian</h1>
+        <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg" class="img-cat" alt="${breed.name}">
+
+-->
+
+        <div class="card cat_card">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg" class="img-fluid rounded-start"
+                        alt="${breed.name}">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title ">Abyssinian</h1>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">
+                        <h3 class="text-body-secondary">dog friendly </h3>
+
+                        <div class="progress" style="height: 30px; width: 350px;">
+                            <div id="progress-bar" class="progress-bar bg-success" role="progressbar"
+                                style="width: 50%; font-size: 25px;" aria-valuemax="100">50%</div>
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
