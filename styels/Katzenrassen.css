@@ -1,20 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 
+body,
+html {
+    margin: 0;
+    padding: 0;
 
+}
+
+.font {
+    font-family: "IM Fell English SC", serif;
+}
 
 
 
 /* rassen*/
+/* Basisstil für Karten */
+/* Sticky Navigation */
+
+
+/* Bilder auf feste Höhe setzen und gleich groß machen */
+.card-img-top {
+    width: 100%;
+    height: 500px;
+    /* Festgelegte Höhe für alle Bilder */
+    object-fit: cover;
+    /* Bild wird skaliert, um den gesamten Raum auszufüllen */
+}
+
+/* Kartenlayout und Flexbox-Anpassungen */
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
-}
-
-.card img {
-    height: 450px;
-    object-fit: cover;
 }
 
 .card-body {
@@ -24,16 +43,59 @@
     justify-content: space-between;
 }
 
-.card-text {
-    flex-grow: 1;
+/* Bootstrap Row Styling */
+.row {
+    margin-top: 100px;
+    justify-content: center;
 }
 
+/* Mobile Optimierungen */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .btn-info {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .btn-info {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Weitere Anpassungen */
 main {
     font-family: "IM Fell English SC", serif;
 }
 
 .description_card {
     font-size: 20px;
+}
+
+.card-text {
+    flex-grow: 1;
+    font-size: 19px;
 }
 
 /* rassen*/

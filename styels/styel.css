@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+
+}
+
 /*nav-bar */
 .nav-icon {
     width: 50px;
@@ -16,6 +26,14 @@
 .name {
     font-size: 20px;
     text-shadow: rgba(0, 0, 0, 0.692) -2px -3px 1px;
+}
+
+.navbar.sticky-top {
+    position: sticky !important;
+    top: 0;
+    z-index: 1030;
+    background-color: #fff;
+    /* Optionale Hintergrundfarbe */
 }
 
 /*nav-bar */

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatWorld</title>
+    <link rel="icon" href="bilder/cat_icon.png" type="imege/ x-icon">
+
+    <!--eigene scripts -->
+    <link rel="stylesheet" href="styels/styel.css" />
+    <link rel="stylesheet" href="styels/tips.css" />
+
+
+    <script src="scripts/api.js"></script>
+
+    <!--eigene scripts -->
+
+    <!-- Bibliotheken -->
+
+    <!--Boostrap-->
+    <link rel="stylesheet" href="Boostrap_min/css/bootstrap.min.css" />
+    <script src="Boostrap_min/js/bootstrap.bundle.min.js"></script>
+    <!--Boostrap-->
+
+    <!--swieper.js-->
+    <link rel="stylesheet" href="swieper/swiper-bundle.min.css" />
+    <script src="swieper/swiper-bundle.min.js"></script>
+    <!--swieper.js-->
+
+    <!-- Bibliotheken -->
+
+
+
+
+
+</head>
+
+<body onload="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="nav-icon" src="bilder/cat_icon.png" alt="leptop">
+            </a>
+            <span>
+                <i class="name" style="color: rgba(129, 107, 107, 0.856);">Cat</i>
+                <i class="name" style="color: rgb(189, 179, 179);">World</i>
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Angebote</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Cat activities</a>
+                        <ul class="dropdown-menu an">
+                            <li><a class="dropdown-item" href="Katzenrassen.html">Cat breeds</a></li>
+                            <li><a class="dropdown-item" href="cat_tips.html">Cat tips</a></li>
+                            <li><a class="dropdown-item" href="#">Normale Laptops</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container my-5">
+            <h1 class="text-center mb-5">Cat Training Activities</h1>
+            <div class="row g-4">
+                <!-- Card 1: Teach your cat tricks -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card text-bg-dark cat">
+                        <img src="bilder/tricks.png" class="card-img" alt="Teach your cat tricks">
+                        <div class="card-img-overlay ">
+                            <h5 class="card-title">Teach your cat tricks</h5>
+                            <p class="card-text">Learn how to teach your cat simple tricks like giving a paw or lying
+                                down.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Litter Training -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card text-bg-dark cat">
+                        <img src="bilder/stubenrein.jpg" class="card-img" alt="Litter Training">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Litter Training</h5>
+                            <p class="card-text">Tips and tricks to litter train your cat and get her used to the litter
+                                box.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Encourage hunting instincts -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card text-bg-dark cat">
+                        <img src="bilder/jagd.jpg" class="card-img" alt="Encourage hunting instincts">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Encourage hunting instincts</h5>
+                            <p class="card-text">Encourage your cat's natural hunting instincts with special games and
+                                exercises.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Feeding training -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card text-bg-dark cat">
+                        <img src="bilder/futtertraining.jpg" class="card-img" alt="Feeding training">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Feeding training</h5>
+                            <p class="card-text">Teach your cat to wait patiently and only take its food on your signal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Engagement and Playtime -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card text-bg-dark cat">
+                        <img src="bilder/beschaeftigung.jpg" class="card-img" alt="Engagement and Playtime">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Engagement and Playtime</h5>
+                            <p class="card-text">Engage your cat with creative games that keep her mentally and
+                                physically fit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Socialization Training -->
+                <div class="col-12 col-sm-6 col-md-4 ">
+                    <div class="card text-bg-dark cat">
+                        <img src="bilder/sozialisierung.jpg" class="card-img cat" alt="Socialization Training">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Socialization Training</h5>
+                            <p class="card-text">Help your cat get used to other animals and people, and socialize well.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0" id="year">.</p>
+            <p class="mb-0">Designed by Shattery</p>
+            <p class="mt-2">This site uses data from <a href="https://thecatapi.com/" class="text-light">TheCatAPI</a>.
+            </p>
+        </div>
+
+        <script>
+            let year = new Date().getFullYear();
+            document.getElementById('year').innerHTML = `&copy; ${year} Cat World. All rights reserved.`
+        </script>
+    </footer>
+
+</body>
+
+</html>
